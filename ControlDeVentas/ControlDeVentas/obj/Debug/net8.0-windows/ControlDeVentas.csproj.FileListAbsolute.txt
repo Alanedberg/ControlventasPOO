@@ -1,0 +1,17 @@
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\ControlDeVentas.exe
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\ControlDeVentas.deps.json
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\ControlDeVentas.runtimeconfig.json
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\ControlDeVentas.dll
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\ControlDeVentas.pdb
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.frmPanelVentas.resources
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.csproj.GenerateResource.cache
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.AssemblyInfoInputs.cache
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.AssemblyInfo.cs
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.csproj.CoreCompileInputs.cache
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.sourcelink.json
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.dll
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\refint\ControlDeVentas.dll
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.pdb
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.genruntimeconfig.cache
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ref\ControlDeVentas.dll
