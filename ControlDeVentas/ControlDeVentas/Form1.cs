@@ -9,7 +9,8 @@ namespace ControlDeVentas
             InitializeComponent();
         }
 
-
+        //Instancio mi clase ventas
+        Ventas objV = new Ventas();
 
 
 
@@ -33,29 +34,48 @@ namespace ControlDeVentas
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            LimpiarCampos();
-            MessageBox.Show("Campos limpios!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult resultado = MessageBox.Show("Deseas Salir del sistema?", "Ventas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            //Condicional el diablo del mensaje
+            if (resultado == DialogResult.OK)
+            {
+                this.Close();
+            }
+            else
+            {
+                LimpiarCampos();
+
+            }
         }
+
 
         private void FrmPanelVentas_Load(object sender, EventArgs e)
         {
             MostrarFechayHora();
             CargarProductos();
         }
-        
+
         //funcion para cargar mis productos
         private void CargarProductos()
         {
             //Lista de productos
-            string[] productos = [ "Bocina", "Teclado", "PC Gamer", "Audifonos" ];
+            string[] productos = { "Bocina", "Teclado", "PC Gamer", "Audifonos" };
 
             //ForEach e itero en mi lista
-            foreach(var p in productos)
+            foreach (var p in productos)
             {
                 //Relleno mi comboBox
                 cmbProducto.Items.Add(p);
             }
-            
+
+        }
+
+        
+
+        private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            objV.Producto = cmbProducto.Text;
+            lblPrecio.Text = objV.ReflejarPrecio().ToString("C");
+
         }
     }
 }

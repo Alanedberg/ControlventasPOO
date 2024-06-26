@@ -240,6 +240,7 @@
             cmbProducto.Size = new Size(270, 23);
             cmbProducto.TabIndex = 2;
             cmbProducto.Text = "Seleccione un producto..";
+            cmbProducto.SelectedIndexChanged += cmbProducto_SelectedIndexChanged;
             // 
             // label5
             // 
@@ -312,7 +313,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(782, 515);
+            ClientSize = new Size(816, 515);
             Controls.Add(lblTotalNeto);
             Controls.Add(label8);
             Controls.Add(lvDetalle);
