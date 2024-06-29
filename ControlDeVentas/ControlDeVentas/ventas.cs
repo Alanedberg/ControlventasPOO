@@ -10,11 +10,11 @@ namespace ControlDeVentas
     {
         //Campos
         private int _cantidad;
-        private String _Producto;
+        private String? _Producto;
 
 
         //constructor
-        public String Producto
+        public String? Producto
 		{
 			get { return _Producto; }
 			set { _Producto = value; }

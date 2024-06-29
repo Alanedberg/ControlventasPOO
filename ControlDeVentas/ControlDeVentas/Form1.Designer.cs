@@ -29,23 +29,18 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label2 = new Label();
-            txtDatosClientes = new TextBox();
-            panel1 = new Panel();
-            label1 = new Label();
+            txtDatosClientes = new MaterialSkin.Controls.MaterialTextBox2();
             label3 = new Label();
             label4 = new Label();
             lblFecha = new Label();
             lblHora = new Label();
             groupBox2 = new GroupBox();
-            txtCantidad = new TextBox();
-            label7 = new Label();
-            btnCancelar = new Button();
-            btnRegistrar = new Button();
-            lblPrecio = new Label();
+            txtCantidad = new MaterialSkin.Controls.MaterialTextBox2();
+            lblPrecio = new MaterialSkin.Controls.MaterialLabel();
+            btnCancelar = new MaterialSkin.Controls.MaterialButton();
+            cmbProducto = new MaterialSkin.Controls.MaterialComboBox();
+            btnRegistrar = new MaterialSkin.Controls.MaterialButton();
             label6 = new Label();
-            cmbProducto = new ComboBox();
-            label5 = new Label();
             lvDetalle = new ListView();
             columnHeader2 = new ColumnHeader();
             columnHeader1 = new ColumnHeader();
@@ -55,63 +50,53 @@
             lblTotalNeto = new Label();
             label8 = new Label();
             groupBox1.SuspendLayout();
-            panel1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(txtDatosClientes);
             groupBox1.Location = new Point(12, 65);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(436, 100);
+            groupBox1.Size = new Size(436, 83);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "DATOS DEL CLIENTE";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(17, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(52, 15);
-            label2.TabIndex = 1;
-            label2.Text = "CLIENTE";
-            // 
             // txtDatosClientes
             // 
-            txtDatosClientes.Location = new Point(17, 41);
+            txtDatosClientes.AnimateReadOnly = false;
+            txtDatosClientes.BackgroundImageLayout = ImageLayout.None;
+            txtDatosClientes.CharacterCasing = CharacterCasing.Normal;
+            txtDatosClientes.Depth = 0;
+            txtDatosClientes.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtDatosClientes.HideSelection = true;
+            txtDatosClientes.Hint = "Nombre del cliente";
+            txtDatosClientes.LeadingIcon = null;
+            txtDatosClientes.Location = new Point(17, 22);
+            txtDatosClientes.MaxLength = 32767;
+            txtDatosClientes.MouseState = MaterialSkin.MouseState.OUT;
             txtDatosClientes.Name = "txtDatosClientes";
-            txtDatosClientes.Size = new Size(375, 23);
-            txtDatosClientes.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(2, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(797, 42);
-            panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(259, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(241, 23);
-            label1.TabIndex = 2;
-            label1.Text = "CONTROL DE VENTAS";
+            txtDatosClientes.PasswordChar = '\0';
+            txtDatosClientes.PrefixSuffixText = null;
+            txtDatosClientes.ReadOnly = false;
+            txtDatosClientes.RightToLeft = RightToLeft.No;
+            txtDatosClientes.SelectedText = "";
+            txtDatosClientes.SelectionLength = 0;
+            txtDatosClientes.SelectionStart = 0;
+            txtDatosClientes.ShortcutsEnabled = true;
+            txtDatosClientes.Size = new Size(348, 48);
+            txtDatosClientes.TabIndex = 12;
+            txtDatosClientes.TabStop = false;
+            txtDatosClientes.TextAlign = HorizontalAlignment.Left;
+            txtDatosClientes.TrailingIcon = null;
+            txtDatosClientes.UseSystemPasswordChar = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(456, 45);
+            label3.Location = new Point(540, 46);
             label3.Name = "label3";
             label3.Size = new Size(46, 15);
             label3.TabIndex = 2;
@@ -121,7 +106,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label4.Location = new Point(650, 46);
+            label4.Location = new Point(690, 46);
             label4.Name = "label4";
             label4.Size = new Size(44, 15);
             label4.TabIndex = 3;
@@ -132,7 +117,7 @@
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Arial Black", 9F, FontStyle.Bold);
             lblFecha.ForeColor = Color.Black;
-            lblFecha.Location = new Point(508, 44);
+            lblFecha.Location = new Point(602, 44);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(64, 17);
             lblFecha.TabIndex = 4;
@@ -143,7 +128,7 @@
             lblHora.AutoSize = true;
             lblHora.Font = new Font("Arial Black", 9F, FontStyle.Bold);
             lblHora.ForeColor = Color.Black;
-            lblHora.Location = new Point(700, 45);
+            lblHora.Location = new Point(740, 44);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(55, 17);
             lblHora.TabIndex = 5;
@@ -152,14 +137,12 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(txtCantidad);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(btnCancelar);
-            groupBox2.Controls.Add(btnRegistrar);
             groupBox2.Controls.Add(lblPrecio);
-            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(btnCancelar);
             groupBox2.Controls.Add(cmbProducto);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Location = new Point(12, 171);
+            groupBox2.Controls.Add(btnRegistrar);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Location = new Point(12, 154);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(754, 100);
             groupBox2.TabIndex = 2;
@@ -168,96 +151,129 @@
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(377, 50);
+            txtCantidad.AnimateReadOnly = false;
+            txtCantidad.BackgroundImageLayout = ImageLayout.None;
+            txtCantidad.CharacterCasing = CharacterCasing.Normal;
+            txtCantidad.Depth = 0;
+            txtCantidad.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtCantidad.HideSelection = true;
+            txtCantidad.Hint = "Cantidad";
+            txtCantidad.LeadingIcon = null;
+            txtCantidad.Location = new Point(286, 42);
+            txtCantidad.MaxLength = 32767;
+            txtCantidad.MouseState = MaterialSkin.MouseState.OUT;
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(83, 23);
-            txtCantidad.TabIndex = 2;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Arial Black", 9F, FontStyle.Bold);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(377, 23);
-            label7.Name = "label7";
-            label7.Size = new Size(76, 17);
-            label7.TabIndex = 10;
-            label7.Text = "CANTIDAD";
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.BackColor = Color.White;
-            btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.ForeColor = SystemColors.ActiveCaptionText;
-            btnCancelar.Location = new Point(618, 52);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(89, 30);
-            btnCancelar.TabIndex = 9;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += btnCancelar_Click;
-            // 
-            // btnRegistrar
-            // 
-            btnRegistrar.BackColor = Color.RoyalBlue;
-            btnRegistrar.FlatStyle = FlatStyle.Popup;
-            btnRegistrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegistrar.ForeColor = SystemColors.Control;
-            btnRegistrar.Location = new Point(618, 15);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(89, 25);
-            btnRegistrar.TabIndex = 8;
-            btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = false;
+            txtCantidad.PasswordChar = '\0';
+            txtCantidad.PrefixSuffixText = null;
+            txtCantidad.ReadOnly = false;
+            txtCantidad.RightToLeft = RightToLeft.No;
+            txtCantidad.SelectedText = "";
+            txtCantidad.SelectionLength = 0;
+            txtCantidad.SelectionStart = 0;
+            txtCantidad.ShortcutsEnabled = true;
+            txtCantidad.Size = new Size(97, 48);
+            txtCantidad.TabIndex = 9;
+            txtCantidad.TabStop = false;
+            txtCantidad.TextAlign = HorizontalAlignment.Left;
+            txtCantidad.TrailingIcon = null;
+            txtCantidad.UseSystemPasswordChar = false;
             // 
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Font = new Font("Arial Black", 9F, FontStyle.Bold);
-            lblPrecio.ForeColor = Color.Black;
-            lblPrecio.Location = new Point(496, 52);
+            lblPrecio.Depth = 0;
+            lblPrecio.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblPrecio.Location = new Point(435, 69);
+            lblPrecio.MouseState = MaterialSkin.MouseState.HOVER;
             lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(36, 17);
-            lblPrecio.TabIndex = 7;
+            lblPrecio.Size = new Size(32, 19);
+            lblPrecio.TabIndex = 9;
             lblPrecio.Text = "0.00";
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.AutoSize = false;
+            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelar.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            btnCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            btnCancelar.Depth = 0;
+            btnCancelar.HighEmphasis = true;
+            btnCancelar.Icon = null;
+            btnCancelar.Location = new Point(630, 52);
+            btnCancelar.Margin = new Padding(4, 6, 4, 6);
+            btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.NoAccentTextColor = Color.Empty;
+            btnCancelar.Size = new Size(105, 32);
+            btnCancelar.TabIndex = 11;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelar.UseAccentColor = false;
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // cmbProducto
+            // 
+            cmbProducto.AutoResize = false;
+            cmbProducto.BackColor = Color.FromArgb(255, 255, 255);
+            cmbProducto.Depth = 0;
+            cmbProducto.DrawMode = DrawMode.OwnerDrawVariable;
+            cmbProducto.DropDownHeight = 174;
+            cmbProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbProducto.DropDownWidth = 121;
+            cmbProducto.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cmbProducto.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cmbProducto.FormattingEnabled = true;
+            cmbProducto.Hint = "Seleccione un producto...";
+            cmbProducto.IntegralHeight = false;
+            cmbProducto.ItemHeight = 43;
+            cmbProducto.Location = new Point(17, 41);
+            cmbProducto.MaxDropDownItems = 4;
+            cmbProducto.MouseState = MaterialSkin.MouseState.OUT;
+            cmbProducto.Name = "cmbProducto";
+            cmbProducto.Size = new Size(228, 49);
+            cmbProducto.StartIndex = 0;
+            cmbProducto.TabIndex = 9;
+            cmbProducto.SelectedIndexChanged += cmbProducto_SelectedIndexChanged_1;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.AutoSize = false;
+            btnRegistrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnRegistrar.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            btnRegistrar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            btnRegistrar.Depth = 0;
+            btnRegistrar.HighEmphasis = true;
+            btnRegistrar.Icon = null;
+            btnRegistrar.Location = new Point(519, 52);
+            btnRegistrar.Margin = new Padding(4, 6, 4, 6);
+            btnRegistrar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.NoAccentTextColor = Color.Empty;
+            btnRegistrar.Size = new Size(105, 32);
+            btnRegistrar.TabIndex = 9;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnRegistrar.UseAccentColor = false;
+            btnRegistrar.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial Black", 9F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(496, 23);
+            label6.Location = new Point(425, 41);
             label6.Name = "label6";
             label6.Size = new Size(59, 17);
             label6.TabIndex = 6;
             label6.Text = "PRECIO";
             // 
-            // cmbProducto
-            // 
-            cmbProducto.FormattingEnabled = true;
-            cmbProducto.Location = new Point(23, 50);
-            cmbProducto.Name = "cmbProducto";
-            cmbProducto.Size = new Size(270, 23);
-            cmbProducto.TabIndex = 2;
-            cmbProducto.Text = "Seleccione un producto..";
-            cmbProducto.SelectedIndexChanged += cmbProducto_SelectedIndexChanged;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.Location = new Point(17, 23);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 15);
-            label5.TabIndex = 1;
-            label5.Text = "PRODUCTO";
-            // 
             // lvDetalle
             // 
             lvDetalle.Columns.AddRange(new ColumnHeader[] { columnHeader2, columnHeader1, columnHeader3, columnHeader4, columnHeader5 });
-            lvDetalle.Location = new Point(23, 277);
+            lvDetalle.Location = new Point(23, 260);
             lvDetalle.Name = "lvDetalle";
-            lvDetalle.Size = new Size(732, 188);
+            lvDetalle.Size = new Size(732, 205);
             lvDetalle.TabIndex = 6;
             lvDetalle.UseCompatibleStateImageBehavior = false;
             lvDetalle.View = View.Details;
@@ -322,16 +338,12 @@
             Controls.Add(lblFecha);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(panel1);
             Controls.Add(groupBox1);
             Name = "FrmPanelVentas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Control de Ventas";
             Load += FrmPanelVentas_Load;
             groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
@@ -341,21 +353,12 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Panel panel1;
-        private Label label1;
-        private TextBox txtDatosClientes;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label lblFecha;
         private Label lblHora;
         private GroupBox groupBox2;
         private Label label6;
-        private ComboBox cmbProducto;
-        private Label label5;
-        private Button btnCancelar;
-        private Button btnRegistrar;
-        private Label lblPrecio;
         private ListView lvDetalle;
         private Label lblTotalNeto;
         private Label label8;
@@ -364,7 +367,11 @@
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
-        private TextBox txtCantidad;
-        private Label label7;
+        private MaterialSkin.Controls.MaterialButton btnRegistrar;
+        private MaterialSkin.Controls.MaterialButton btnCancelar;
+        private MaterialSkin.Controls.MaterialComboBox cmbProducto;
+        private MaterialSkin.Controls.MaterialLabel lblPrecio;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCantidad;
+        private MaterialSkin.Controls.MaterialTextBox2 txtDatosClientes;
     }
 }

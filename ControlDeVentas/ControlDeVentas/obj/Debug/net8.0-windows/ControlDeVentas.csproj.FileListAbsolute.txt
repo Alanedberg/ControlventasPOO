@@ -15,3 +15,6 @@ C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj
 C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.pdb
 C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.genruntimeconfig.cache
 C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ref\ControlDeVentas.dll
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlDeVentas.csproj.AssemblyReference.cache
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\bin\Debug\net8.0-windows\MaterialSkin.dll
+C:\Users\alane\source\repos\ControlventasPOO\ControlDeVentas\ControlDeVentas\obj\Debug\net8.0-windows\ControlD.241E69FB.Up2Date

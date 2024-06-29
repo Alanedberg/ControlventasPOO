@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "B2MfL8DGtEB9WVgXQbz67AnMx9tRghjmDtMqYXf7VS7As9bGwsqJLmZjmug2jg+5xULEFBxXWeT0e14S+eAkCQ==",
+  "dgSpecHash": "rn0JGOvnL0MjGNGH/oMLkSxeMLVeB/ufiJiWIqsoUsmzlx3qrjjryvq28kBJsunDjqIJV/T23ng3o7Y4vLqz9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\alane\\source\\repos\\ControlventasPOO\\ControlDeVentas\\ControlDeVentas\\ControlDeVentas.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\alane\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512"
+  ],
   "logs": []
 }
